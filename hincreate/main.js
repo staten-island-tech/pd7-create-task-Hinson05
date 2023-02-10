@@ -24,3 +24,9 @@ function insert() {
   );
 }
 insert();
+DOMSelectors.input.insertAdjacentHTML(
+  "afterbegin",
+  `<p class= "yes"> Name: ${x}  
+  Input: ${}
+  <img id= "image" src= 'https://flagsapi.com/${flag}/flat/64.png'></p>`
+);
