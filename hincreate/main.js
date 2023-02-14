@@ -24,11 +24,8 @@ function insert() {
   );
 }
 insert();
-DOMSelectors.input.insertAdjacentHTML(
-  "afterbegin",
-  `<p class= "yes"> Name: ${x}  
-  <img id= "image" src= 'https://flagsapi.com/${flag}/flat/64.png'></p>`
-);
+DOMSelectors.input.insertAdjacentHTML();
 function clearScreen() {
   document.getElementById("clear").value = "";
-  }
+}
+clearScreen();

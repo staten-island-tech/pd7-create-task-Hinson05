@@ -3,18 +3,26 @@
   justify-content: center;
   align-items: center;
   min-height: 15px;
-  grid-template-columns: repeat(6, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(3, 100px);
 }
 
 .container {
   height: 650px;
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
 .button {
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
+  height: 100px;
+}
+#input {
+  align-items: center;
+  text-align: center;
+}
+#head1 {
+  text-align: center;
 }
