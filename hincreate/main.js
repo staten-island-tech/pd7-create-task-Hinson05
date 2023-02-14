@@ -29,3 +29,6 @@ DOMSelectors.input.insertAdjacentHTML(
   `<p class= "yes"> Name: ${x}  
   <img id= "image" src= 'https://flagsapi.com/${flag}/flat/64.png'></p>`
 );
+function clearScreen() {
+  document.getElementById("clear").value = "";
+  }
