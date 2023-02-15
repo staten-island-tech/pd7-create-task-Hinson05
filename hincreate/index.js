@@ -1,4 +1,4 @@
-import "./style.css";
+import { array } from "./array";
 const DOMSelectors = {
   zero: document.getElementById("zero"),
   one: document.getElementById("one"),
@@ -13,7 +13,7 @@ const DOMSelectors = {
   variable: document.getElementById("variable"),
   clear: document.getElementById("clear"),
   exponent: document.getElementById("exponent"),
-  div: document.getElementById("app"),
+  div: document.getElementById("div"),
 };
 function insert() {
   array.forEach((element) =>
@@ -24,12 +24,3 @@ function insert() {
   );
 }
 insert();
-DOMSelectors.input.insertAdjacentHTML();
-function clearScreen() {
-  document.getElementById("clear").value = "";
-}
-clearScreen();
-
-function add(x, y) {
-  return x * y `<p>x</p>;
-}

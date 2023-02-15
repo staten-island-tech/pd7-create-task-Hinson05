@@ -1,4 +1,4 @@
-const array = [
+const rules = [
   {
     type: "Product Rule",
     image:
