@@ -14,22 +14,25 @@ const DOMSelectors = {
   clear: document.getElementById("clear"),
   exponent: document.getElementById("exponent"),
   div: document.getElementById("app"),
+  input: document.getElementById("ex"),
+  inputtwo: document.getElementById("box"),
 };
-function insert() {
-  array.forEach((element) =>
-    DOMSelectors.div.insertAdjacentHTML(
-      "afterend",
-      `<div class="flex"><p id="box">${element.type}</p> <img id="imag" src="${element.image}"></div>`
-    )
-  );
-}
-insert();
-DOMSelectors.input.insertAdjacentHTML();
-function clearScreen() {
-  document.getElementById("clear").value = "";
-}
-clearScreen();
 
+DOMSelectors.clear.addEventListener("click", function () {
+  DOMSelectors.input.innerHTML = "";
+});
+
+let x = DOMSelectors.input.value;
+let y = DOMSelectors.inputtwo.value;
 function add(x, y) {
-  return x * y `<p>x</p>;
+  DOMSelectors.div.insertAdjacentHTML(
+    "afterbegin",
+    `<p>${x * y}x^${y - 1}</p>`
+  );
+  return x + y;
 }
+
+DOMSelectors.submit.addEventListener("click", function () {
+  add(x, y);
+});
+console.log(add(x, y));
