@@ -13,9 +13,10 @@ const DOMSelectors = {
   variable: document.getElementById("variable"),
   clear: document.getElementById("clear"),
   exponent: document.getElementById("exponent"),
-  div: document.getElementById("app"),
+  div: document.getElementById("div"),
   input: document.getElementById("ex"),
   inputtwo: document.getElementById("box"),
+  submit: document.getElementById("enter"),
 };
 
 DOMSelectors.clear.addEventListener("click", function () {
@@ -24,15 +25,11 @@ DOMSelectors.clear.addEventListener("click", function () {
 
 let x = DOMSelectors.input.value;
 let y = DOMSelectors.inputtwo.value;
-function add(x, y) {
-  DOMSelectors.div.insertAdjacentHTML(
-    "afterbegin",
-    `<p>${x * y}x^${y - 1}</p>`
-  );
-  return x + y;
+function power(x, y) {
+  DOMSelectors.div.insertAdjacentHTML("afterend", `<p>${x * y}x^${x - 1}</p>`);
 }
 
 DOMSelectors.submit.addEventListener("click", function () {
-  add(x, y);
+  power(x, y);
+  console.log(`${x * y}x^${x - 1}`);
 });
-console.log(add(x, y));
