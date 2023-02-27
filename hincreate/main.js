@@ -16,7 +16,11 @@ const DOMSelectors = {
   div: document.getElementById("div"),
   input: document.getElementById("ex"),
   inputtwo: document.getElementById("box"),
-  submit: document.getElementById("enter"),
+  power: document.getElementById("Power"),
+  quotient: document.getElementById("Quotient"),
+  product: document.getElementById("Product"),
+  inputthree: document.getElementById("in"),
+  inputfour: document.getElementById("out"),
 };
 
 DOMSelectors.clear.addEventListener("click", function () {
@@ -29,7 +33,35 @@ function power(x, y) {
   DOMSelectors.div.insertAdjacentHTML("afterend", `<p>${x * y}x^${x - 1}</p>`);
 }
 
-DOMSelectors.submit.addEventListener("click", function () {
+DOMSelectors.power.addEventListener("click", function () {
   power(x, y);
   console.log(`${x * y}x^${x - 1}`);
+});
+DOMSelectors.power.addEventListener("click", function () {
+  power(x, y);
+});
+
+let w = DOMSelectors.inputthree.value;
+let z = DOMSelectors.inputfour.value;
+function quotient(x, y, w, z) {
+  DOMSelectors.div.insertAdjacentHTML(
+    "afterend",
+    `<p>((${w}x^${z})(${x * y}x^${x - 1}) - (${x}x^${y})(${w * z}x^${
+      z - 1
+    }))/(${w}x^${z})^2</p>`
+  );
+}
+
+DOMSelectors.quotient.addEventListener("click", function () {
+  quotient(x, y, w, z);
+});
+function product(x, y, w, z) {
+  DOMSelectors.div.insertAdjacentHTML(
+    "afterend",
+    `<p>(${x * y}x^${x - 1})</p>`
+  );
+}
+
+DOMSelectors.product.addEventListener("click", function () {
+  product(x, y, w, z);
 });

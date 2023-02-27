@@ -9,17 +9,20 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
-    <h1 id="head1">Power Rule Derivative Calculator</h1>
+    <h1 id="head1">Derivative Calculator</h1>
     <div id= "container">
       <div id="input">
-      <p><input class= "inner" id= "box">x^<input class= "inner" id="ex"><select class= "inner" id="operation">
+      <p><input class= "inner" id= "box">x^<input class= "inner" id="ex"> <select class= "inner" id="operation">
         <option value="plus">+</option>
         <option value="minus">-</option>
         <option value="divide">/</option>
         <option value="none"> </option>
         <option value="multiply">*</option>
       </select>
-      <button id="enter">Enter</button>
+      <input class= "inner" id= "in">x^<input class= "inner" id="out">
+      <button id="Product">Product Rule!</button>
+      <button id="Quotient">Quotient Rule!</button>
+      <button id="Power">Power Rule!</button>
     </div>
     <div class= "buttons">
     <button class= "button" id= "one" onclick="insert()">1</button>
