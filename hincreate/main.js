@@ -19,6 +19,7 @@ const DOMSelectors = {
   power: document.getElementById("Power"),
   quotient: document.getElementById("Quotient"),
   product: document.getElementById("Product"),
+  enter: document.getElementById("enter"),
   inputthree: document.getElementById("in"),
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
@@ -77,6 +78,11 @@ function insert() {
   );
 }
 insert();
-function refreshPage() {
+function refresh() {
   window.location.reload();
 }
+
+DOMSelectors.enter.addEventListener("click", function(){
+  refresh();
+}
+)

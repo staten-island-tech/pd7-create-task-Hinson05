@@ -33,3 +33,9 @@
   text-align: center;
   margin-top: 5px;
 }
+#headtwo {
+  text-align: center;
+}
+.container {
+  border: 3px black solid;
+}
