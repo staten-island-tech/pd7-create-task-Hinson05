@@ -12,17 +12,14 @@
     <h1 id="head1">Derivative Calculator</h1>
     <div id= "container">
       <div id="input">
-      <p><input class= "inner" id= "box">x^<input class= "inner" id="ex"> <select class= "inner" id="operation">
-        <option value="plus">+</option>
-        <option value="minus">-</option>
-        <option value="divide">/</option>
-        <option value="none"> </option>
-        <option value="multiply">*</option>
-      </select>
+      <p><input class= "inner" id= "box">x^<input class= "inner" id="ex"> 
+        <p>multiply/divide/none</p>
       <input class= "inner" id= "in">x^<input class= "inner" id="out">
+      <div>
       <button id="Product">Product Rule!</button>
       <button id="Quotient">Quotient Rule!</button>
       <button id="Power">Power Rule!</button>
+    </div>
     </div>
     <div class= "buttons">
     <button class= "button" id= "one" onclick="insert()">1</button>
@@ -43,7 +40,9 @@
   </div>
   </div>
   </body>
-  <div id="div"></div>
+  <div id="div">
+    Results
+  </div>
   <div id="app"></div>
 </html>
 
