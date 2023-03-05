@@ -23,20 +23,22 @@ const DOMSelectors = {
   inputthree: document.getElementById("in"),
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
+  select: document.getElementById("select"),
 };
 
-
+let sohcahtoa = select.value
 let x = DOMSelectors.input.value;
 let y = DOMSelectors.inputtwo.value;
 function power(x, y) {
   DOMSelectors.div.insertAdjacentHTML(
     "afterend",
-    `<p id="results">${x * y}x^${x - 1}</p>`
+    `<p id="results">${x * y}${sohcahtoa}x^${x - 1}</p>`
   );
 }
 
 DOMSelectors.power.addEventListener("click", function () {
   power(x, y);
+  
 });
 
 let w = DOMSelectors.inputthree.value;

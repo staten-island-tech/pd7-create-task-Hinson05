@@ -1,6 +1,9 @@
 import { rules } from "./array.js";
 const DOMSelectors = {
     end: document.getElementById("end"),
+    power: document.getElementById("Power"),
+  quotient: document.getElementById("Quotient"),
+  product: document.getElementById("Product"),
   }
   
   function insert() {
@@ -12,4 +15,3 @@ const DOMSelectors = {
     );
   }
   insert();
-  
