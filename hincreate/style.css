@@ -41,3 +41,8 @@
   align-items: center;
   text-align: center;
 }
+#app {
+  align-items: center;
+  text-align: center;
+  border: 2px black solid
+}
