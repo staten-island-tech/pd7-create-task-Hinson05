@@ -10,24 +10,26 @@
     <script type="module" src="/main.js"></script>
     <script type="module" src="/index.js"></script>
     <h1 id="head1">Derivative Calculator</h1>
-    <h2 id= "headtwo">This is a single term power rule calculator and a quotient/product rule calculator</h2>
+    <h2 id= "headtwo">This is a single term power rule calculator, trig, and a quotient/product rule calculator</h2>
     <div id= "container">
       <div id="input">
-      <p><input class= "inner" id= "box"><select id="select">
-        <option value=" ">x</option>
-        <option value="cos">sinx</option>
-        <option value="-sin">cosx</option>
-        <option value="sec^2x">tanx</option>
-      </select>^<input class= "inner" id="ex"> 
+      <p><input class= "inner" id= "box">x^<input class= "inner" id="ex"> 
         <p>multiply/divide/none</p>
       <input class= "inner" id= "in">x^<input class= "inner" id="out">
       <div id="enter">
-        <button class= "button" id="reload">Enter Values</button>
+        <input id="coef"><select id="select">
+          <option value="(1)">x</option>
+          <option value="cosx">sinx</option>
+          <option value="-sinx">cosx</option>
+          <option value="sec^2x">tanx</option>
+        </select>
       </div>
+      <button class= "button" id="reload">Enter Values</button>
       <div>
       <button id="Product">Product Rule!</button>
       <button id="Quotient">Quotient Rule!</button>
       <button id="Power">Power Rule!</button>
+      <button id="trig">d/dx trig!</button>
     </div>
     </div>
   </div>

@@ -24,15 +24,16 @@ const DOMSelectors = {
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
   select: document.getElementById("select"),
+  trig: document.getElementById("trig"),
+  inputfive: document.getElementById("coef")
 };
 
-let sohcahtoa = select.value
 let x = DOMSelectors.input.value;
 let y = DOMSelectors.inputtwo.value;
 function power(x, y) {
   DOMSelectors.div.insertAdjacentHTML(
     "afterend",
-    `<p id="results">${x * y}${sohcahtoa}x^${x - 1}</p>`
+    `<p id="results">${x * y}x^${x - 1}</p>`
   );
 }
 
@@ -75,5 +76,16 @@ function refresh() {
 DOMSelectors.reload.addEventListener("click", function(){
   refresh();
   console.log("Value reloaded");
+});
+
+function derivtrig() {
+  let sohcahtoa = select.value
+  let t = DOMSelectors.inputfive.value;
+  DOMSelectors.div.insertAdjacentHTML(
+    "afterend",
+    `<p id="results">${t}${sohcahtoa}</p>`
+  );
 }
-)
+DOMSelectors.trig.addEventListener("click", function(){
+  derivtrig();
+});
