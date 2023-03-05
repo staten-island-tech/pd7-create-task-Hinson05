@@ -23,6 +23,7 @@ const DOMSelectors = {
   inputthree: document.getElementById("in"),
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
+  input: document.getElementById("in"),
 };
 
 DOMSelectors.clear.addEventListener("click", function () {

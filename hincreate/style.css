@@ -17,7 +17,8 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
-  height: 100px;
+  width: 100px;
+  margin-top: 15px;
 }
 #input {
   align-items: center;
@@ -38,4 +39,8 @@
 }
 .container {
   border: 3px black solid;
+}
+#trig {
+  align-items: center;
+  text-align: center;
 }
