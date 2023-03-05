@@ -16,3 +16,16 @@ const rules = [
 ];
 
 const trig = [{ type: "sinx" }, { type: "cosx" }, { type: "tanx" }];
+
+const DOMSelectors = {
+  app: document.getElementById("app"),
+}
+
+function insert() {
+  rules.forEach((element) =>
+    DOMSelectors.app.insertAdjacentHTML(
+      "beforeend",
+      `<div><p>${element.type}</p> <img id="image" src="${element.image}"></div>`
+    )
+  );
+}
