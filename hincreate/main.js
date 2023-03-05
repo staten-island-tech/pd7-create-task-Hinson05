@@ -23,12 +23,8 @@ const DOMSelectors = {
   inputthree: document.getElementById("in"),
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
-  input: document.getElementById("in"),
 };
 
-DOMSelectors.clear.addEventListener("click", function () {
-  DOMSelectors.input.innerHTML = "";
-});
 
 let x = DOMSelectors.input.value;
 let y = DOMSelectors.inputtwo.value;
@@ -76,6 +72,6 @@ function refresh() {
 
 DOMSelectors.reload.addEventListener("click", function(){
   refresh();
-  console.log("Value reloaded")
+  console.log("Value reloaded");
 }
 )
