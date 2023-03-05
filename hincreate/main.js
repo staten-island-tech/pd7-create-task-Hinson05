@@ -19,7 +19,7 @@ const DOMSelectors = {
   power: document.getElementById("Power"),
   quotient: document.getElementById("Quotient"),
   product: document.getElementById("Product"),
-  enter: document.getElementById("enter"),
+  reload: document.getElementById("reload"),
   inputthree: document.getElementById("in"),
   inputfour: document.getElementById("out"),
   app: document.getElementById("app"),
@@ -69,20 +69,12 @@ DOMSelectors.product.addEventListener("click", function () {
   product(x, y, w, z);
 });
 
-function insert() {
-  rules.forEach((element) =>
-    DOMSelectors.app.insertAdjacentHTML(
-      "beforeend",
-      `<div><p>${element.type}<img id="imag" src="${element.image}"></div>`
-    )
-  );
-}
-insert();
 function refresh() {
   window.location.reload();
 }
 
-DOMSelectors.enter.addEventListener("click", function(){
+DOMSelectors.reload.addEventListener("click", function(){
   refresh();
+  console.log("Value reloaded")
 }
 )
